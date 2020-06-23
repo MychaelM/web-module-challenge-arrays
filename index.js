@@ -94,9 +94,9 @@ Your function should accept:
 
 For example, getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully. */
 
-function getFlavorByIndex(/*code here*/){
+function getFlavorByIndex(arrayProvided, indexOfItem){
 
-    /*code here*/
+    return arrayProvided[indexOfItem];
 
 }
 
@@ -113,10 +113,11 @@ Hint: You can use .splice() for this
 
 */
 
-function removeFlavorByName(/*code here*/){
+function removeFlavorByName(arrayProvided, flavor){
 
-    /*code here*/
-
+    itemToRemove = arrayProvided.indexOf(flavor);
+    arrayProvided.splice(itemToRemove, 1);
+    console.log(arrayProvided);
 }
 
 
