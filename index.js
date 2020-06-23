@@ -153,10 +153,17 @@ DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem.
 
 hint - you can use the .includes method to help you solve this */
 
-function filterByWord(/*code here*/){
-
-    /*code here*/
-
+function filterByWord(arrayProvided, filteredWord){
+    const newArray = [];
+    for (let i = 0; i < arrayProvided.length; i++) {
+        const element = arrayProvided[i];
+        if (element.includes(filteredWord) ) {
+            newArray.push(arrayProvided[i]);
+            // console.log(newArray);
+        }
+        // console.log(newArray);
+    }
+    return newArray;
 }
 
 
