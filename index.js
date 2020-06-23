@@ -61,9 +61,9 @@ Your function should add the flavor to the front of the array and console.log th
 
 For example addFlavor("Rainbow Sherbert", originalFlavors) should return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla Burnt Almond"] */ 
 
-function addFlavor(/*code here*/){
-
-    /*code here*/
+function addFlavor(arrayProvided, flavor){
+    arrayProvided.unshift(flavor);
+    console.log(arrayProvided);
 
 }
 
@@ -78,9 +78,10 @@ Your function should remove a flavor from the end of the array and console.log t
 
 For example removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]*/ 
 
-function removeLastFlavor(/*code here*/){
+function removeLastFlavor(arrayProvided){
 
-    /*code here*/
+    arrayProvided.pop();
+    console.log(arrayProvided);
 
 }
 
