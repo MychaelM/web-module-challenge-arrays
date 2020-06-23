@@ -128,10 +128,12 @@ Your function should accept:
 2 arguments 1 for your new array and one for your original array
 
 and should return a new array that is identical to the old array. You can name the new array however you'd like. */
+let someArray = [];
 
-function copy(/*code here*/){
+function copy(originalArray, newArray){
 
-    /*code here*/
+    newArray = [...originalArray];
+    return newArray;
 
 }
 
