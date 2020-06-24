@@ -138,6 +138,8 @@ function copy(originalArray, newArray){
     return newArray;
 }
 
+copy(originalFlavors, someArray);
+
 /* Task 7: July 7th is "World Chocolate Day" and Baskin Robins wants to create promotional materials highlighting all of their chocolate flavors. Write a function that checks every item in the array for a given string and returns a new array called filteredArray with just these values. Rather than hardcoding "chocolate" into your function, pass a string as a parameter, and invoke with the argument "chocolate". This way you could also filter for "Vanilla", "Sherbert", etc. when those holidays roll around.
 
 Your function should accept: 
@@ -166,7 +168,7 @@ function filterByWord(arrayProvided, filteredWord){
     return newArray;
 }
 
-
+filterByWord(originalFlavors, "Chocolate");
 
 /* 🧁🍦🍨 STRETCH 🍨🍦🍫*/ 
 
@@ -185,7 +187,7 @@ function getAverageWordLength(arrayProvided){
     for (let i = 0; i < arrayProvided.length; i++) {
         const element = arrayProvided[i];
         string += element.split(' ').length;
-        console.log(string);
+        // console.log(string);
     }
     // console.log(Math.round(string / arrayProvided.length));
     averageWords = Math.round(string / arrayProvided.length);
